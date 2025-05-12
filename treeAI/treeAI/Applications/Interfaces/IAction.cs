@@ -8,5 +8,7 @@ namespace treeAI.Applications.Interfaces
 {
     internal interface IAction
     {
+       string Name { get; }
+       Task<string> ExecuteAsync(Dictionary<string, object> parameters);
     }
 }
